@@ -48,14 +48,20 @@ package assignmentfour;
 
 	    // Overloaded of makePayment
 	    public void makePayment(double amount) {
+	    	// display the result
+	        displayDetails();
 	        System.out.printf("Amount %.1f paid in cash\n", amount);
 	    }
 
 	    public void makePayment(double amount, String walletNumber) {
+	    	// display the result
+	        displayDetails();
 	        System.out.printf("Amount %.1f paid using wallet number %s\n", amount, walletNumber);
 	    }
 
 	    public void makePayment(String holderName, double amount, String cardType, String ccv) {
+	    	// display the result
+	        displayDetails();
 	        System.out.println("Holder name:" + holderName);
 	        System.out.printf("Amount %.1f paid using %s card\n", amount, cardType);
 	        System.out.println("CCV:" + ccv);
@@ -109,7 +115,7 @@ package assignmentfour;
 	            default:
 	                System.out.println("Invalid choice");
 	        }
-	        tb.displayDetails();
+	        
 
 	    }
 	}
